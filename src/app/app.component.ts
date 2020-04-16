@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     this.setTitle(this.title);
   }
 
-  public setTitle(newTitle: string)
+  private setTitle(newTitle: string)
   {
     this.titleService.setTitle(newTitle);
   }

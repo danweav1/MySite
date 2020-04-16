@@ -1,11 +1,29 @@
 import { Injectable } from '@angular/core';
 import { Project } from './project.model';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProjectService {
-  private projects: Project[] = [];
+  private projects: Project[] = [
+    {
+      name: 'wtf m8',
+      description: 'graduated to pof my class',
+      imagePath:
+        'https://pics.me.me/please-be-patient-i-have-autism-44399238.png',
+      url: 'thisurldoesntwork',
+    },
+    {
+      name: 'dota',
+      description: 'Magnus 0 20 0',
+      imagePath:
+        'https://www.esportsbets.com/wp-content/uploads/2019/09/insane-ban-1024x516.jpg',
+      url: 'thisurldoesntwork',
+    },
+  ];
+
+  projectsUpdated = new Subject();
 
   constructor() {}
 
@@ -16,5 +34,10 @@ export class ProjectService {
       imagePath: imagePath,
       url: url,
     });
+    this.projectsUpdated.next();
+  }
+
+  getProjects() {
+    return [...this.projects];
   }
 }
