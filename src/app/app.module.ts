@@ -12,6 +12,9 @@ import { ProjectComponent } from './project/project.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './material.module';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EducationComponent } from './education/education.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
     ProjectComponent,
     HomeComponent,
     SidenavComponent,
+    EducationComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +36,7 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
     FlexLayoutModule,
     MaterialModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

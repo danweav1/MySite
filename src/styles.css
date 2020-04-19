@@ -3,8 +3,14 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", "Roboto", sans-serif;
   height: 100%;
+}
+
+h1,
+h2,
+span {
+  font-family: "Quicksand", Arial, sans-serif;
 }
 
 body {

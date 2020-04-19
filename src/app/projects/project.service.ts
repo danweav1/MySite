@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Project } from './project.model';
 import { Subject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -25,7 +26,7 @@ export class ProjectService {
 
   projectsUpdated = new Subject();
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   addProject(name: string, desc: string, imagePath: string, url: string) {
     this.projects.push({
@@ -38,6 +39,9 @@ export class ProjectService {
   }
 
   getProjects() {
+    // this.http.get('https://api.github.com/users/danweav1/repos').subscribe(() => {
+
+    // });
     return [...this.projects];
   }
 }

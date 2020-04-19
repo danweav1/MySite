@@ -1,16 +1,22 @@
 <mat-toolbar color="primary">
-  <div fxHide.gt-xs>
-    <button mat-icon-button (click)="onToggleSidenav()">
+  <mat-toolbar-row>
+    <button
+      mat-icon-button
+      (click)="onToggleSidenav()"
+      fxHide.gt-sm
+      fxShow="true"
+    >
       <mat-icon>menu</mat-icon>
     </button>
-  </div>
-  <div><a routerLink="/">Daniel Weaver Software Engineer</a></div>
-  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
-    <ul fxLayout fxLayoutGap="10px" class="navigation-items">
-      <li><a routerLink="">Home</a></li>
-      <li><a routerLink="/about">About Me</a></li>
-      <li><a routerLink="/experience">Experience</a></li>
-      <li><a routerLink="/projects">Projects</a></li>
-    </ul>
-  </div>
+    <span><a routerLink="/">Daniel Weaver Software Engineer</a></span>
+    <span class="menu-spacer"></span>
+    <div fxShow="true" fxHide.lt-md>
+      <a class="nav-caption" routerLink="">HOME</a>
+      <a class="nav-caption" routerLink="/about">ABOUT</a>
+      <a class="nav-caption" routerLink="/experience">EXPERIENCE</a>
+      <a class="nav-caption" routerLink="/projects">PROJECTS</a>
+      <a class="nav-caption" routerLink="/projects">EDUCATION</a>
+      <a class="nav-caption" routerLink="/projects">CONTACT</a>
+    </div>
+  </mat-toolbar-row>
 </mat-toolbar>
