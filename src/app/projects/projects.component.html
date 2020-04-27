@@ -1,2 +1,3 @@
-<app-project *ngFor="let proj of projects" [project]="proj"></app-project>
-<p>test projects</p>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <app-project *ngFor="let proj of projects" [project]="proj"></app-project>
+</div>

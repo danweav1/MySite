@@ -1,0 +1,29 @@
+mat-card {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+}
+
+img {
+  margin: 3px 3px 3px 3px;
+  border: 1px solid black;
+}
+
+div {
+  margin: 10px 10px 10px 10px;
+  font-family: "Quicksand", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+mat-card-content {
+  font-family: "Quicksand", Arial, sans-serif;
+}
+
+mat-card-header {
+  font-family: "Quicksand", Arial, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+}

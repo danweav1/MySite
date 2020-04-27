@@ -9,18 +9,16 @@ import { HttpClient } from '@angular/common/http';
 export class ProjectService {
   private projects: Project[] = [
     {
-      name: 'wtf m8',
-      description: 'graduated to pof my class',
-      imagePath:
-        'https://pics.me.me/please-be-patient-i-have-autism-44399238.png',
-      url: 'thisurldoesntwork',
+      name: 'My Site',
+      description: "The site you're currently on :)",
+      imagePath: 'assets/my-site-image.png',
+      url: 'https://github.com/danweav1/MySite',
     },
     {
-      name: 'dota',
-      description: 'Magnus 0 20 0',
-      imagePath:
-        'https://www.esportsbets.com/wp-content/uploads/2019/09/insane-ban-1024x516.jpg',
-      url: 'thisurldoesntwork',
+      name: 'Fitness Tracker',
+      description: 'Simple fitness tracker built with Angular and Firebase.',
+      imagePath: 'assets/fitness-app-image.png',
+      url: 'https://github.com/danweav1/Fitness-Tracker',
     },
   ];
 
