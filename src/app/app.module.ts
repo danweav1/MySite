@@ -15,6 +15,7 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
+import { MaterialElevationDirective } from './material-elevation.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ContactComponent } from './contact/contact.component';
     SidenavComponent,
     EducationComponent,
     ContactComponent,
+    MaterialElevationDirective,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,8 @@ import { Project } from '../projects/project.model';
 })
 export class ProjectComponent implements OnInit {
   @Input() project: Project;
+  defaultElevation = 0;
+  raisedElevation = 20;
 
   constructor() {}
 
