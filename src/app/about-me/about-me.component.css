@@ -1,0 +1,26 @@
+.section-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+.about {
+  min-height: 100vh;
+  justify-content: center;
+  height: 100%;
+}
+
+p,
+ul {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 1.1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

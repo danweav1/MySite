@@ -1,1 +1,72 @@
-<p>experience works!</p>
+<div fxLayoutAlign="center center">
+  <div class="section-wrapper">
+    <mat-vertical-stepper>
+      <ng-template matStepperIcon="edit">
+        <mat-icon>work</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="number">
+        <mat-icon>work</mat-icon>
+      </ng-template>
+      <mat-step [completed]="completed">
+        <h1>Senior Software Engineer Jul 2018 - May 2020</h1>
+        <h2>Oceaneering International - Remote</h2>
+        <ul style="list-style-type: disc;">
+          <li>
+            Expanded the capabilities of a Unity WebGL project and increased
+            user productivity by creating and populating GUIs with real-time
+            data from the customer’s 3D models.
+          </li>
+          <li>
+            Created parts of the backend of a web application using
+            Python/Django to communicate with REST APIs that allow users to
+            control sensors monitoring the environment. This yielded an increase
+            in security and response time for the customer and their assets.
+          </li>
+          <li>
+            Boosted mission readiness for DoD employees globally by creating a
+            2D interactive map component in C# to replace a 20 year old ActiveX
+            component. Using WPF and implementing the MVVM design pattern,
+            performance increased tenfold over the existing component and is now
+            future-proof by easily scaling with existing applications.
+          </li>
+        </ul>
+        <hr />
+      </mat-step>
+      <mat-step [completed]="completed"
+        ><h1>Software Engineer Jan 2015 - Jul 2018</h1>
+        <h2>Oceaneering International - Hanover, MD</h2>
+        <ul style="list-style-type: disc;">
+          <li>
+            Built an extensive collection of data analysis applications in C# to
+            replace ~10 year old Delphi applications used by DoD analysts.
+            Analysts used these tools to visualize data contained in binary
+            files and manipulated them as needed. End-users were able to
+            complete their jobs quicker with these new tools providing an
+            increase in performance and ease of use.
+          </li>
+          <li>
+            Maintained a timekeeping web application used by hundreds of federal
+            and civilian employees. Using ASP.NET and SQL Server, I fixed
+            critical bugs and eliminated downtown for the users.
+          </li>
+        </ul>
+        <hr />
+      </mat-step>
+      <mat-step [completed]="completed"
+        ><h1>Software Engineer Intern Jan 2014 - Dec 2015</h1>
+        <h2>Oceaneering International - Hanover, MD</h2>
+        <ul style="list-style-type: disc;">
+          <li>
+            Created a 2D canvas for visualizing the location of an underwater
+            ROV on a ship’s hull where users could mark and save interesting
+            anomalies.
+          </li>
+          <li>
+            Implemented a heads-up display for the drivers of the ROV to get
+            real time feedback such as heading and speed.
+          </li>
+        </ul>
+      </mat-step>
+    </mat-vertical-stepper>
+  </div>
+</div>
