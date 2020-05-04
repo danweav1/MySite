@@ -49,12 +49,19 @@ div.item {
   display: inline-block;
   text-align: center;
   width: 120px;
+  max-width: 120px;
+  min-width: 120px;
 }
-.skills {
+
+.img-skills {
   width: 100px;
   height: 100px;
-  background-color: grey;
 }
+
 .caption {
   display: block;
+}
+
+.skills-section {
+  width: 410px;
 }
