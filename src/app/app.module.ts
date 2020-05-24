@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './material.module';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
-import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { MaterialElevationDirective } from './material-elevation.directive';
 
@@ -27,7 +26,6 @@ import { MaterialElevationDirective } from './material-elevation.directive';
     ProjectComponent,
     HomeComponent,
     SidenavComponent,
-    EducationComponent,
     ContactComponent,
     MaterialElevationDirective,
   ],
